@@ -1,0 +1,90 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400; /* boldness */
+    line-height: 1.8em;
+    color: #666;
+}
+
+/* Images */
+.pimg1, .pimg2, .pimg3{
+    position: relative;
+    /* opacity:  */
+    opacity: 0.70;
+    /* centered images */
+    background-position: center;
+    /* cover entire space */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* parallax effect */
+    /* fixed = parallax
+    scroll = normal */
+    background-attachment: fixed;
+}
+
+/* big imgage */
+.pimg1{
+    background-image: url(../images/photos/ashim-d-silva-95242-unsplash.jpg);
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url(../images/photos/blurrystock-582157-unsplash.jpg);
+    min-height: 400px;
+}
+
+.pimg3{
+    background-image: url(../images/photos/manny-pantoja-603276-unsplash.jpg);
+    min-height: 400px;
+}
+.pimg4{
+    background-image: url(../images/photos/manny-pantoja-603276-unsplash.jpg);
+    min-height: 400px;
+}
+
+/* Text */
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    /* horizontal spacing between each letter of the word */
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext, .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext, .border.trans{
+    background-color: transparent;
+}
+
+@media(max-width: 568px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll;
+    }
+}
