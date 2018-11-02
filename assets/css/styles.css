@@ -110,6 +110,7 @@ section{
     background-position: center;
     /* //makes the image appear clearly */
     background-size: cover;
+    margin: auto;
 }
 
 #landing-text h4{
@@ -255,6 +256,7 @@ p{
 
 .tech-icon{
     max-height: 109px;
+    filter: drop-shadow(-1px 0px 12px orange);
     /* width: 98px; */
 
 }
@@ -618,10 +620,6 @@ footer h3{
 }
 /* Screen Sizes 500px and BELOW */
 @media screen and (max-width: 500px){
-    #edu-content{
-        display: flex;
-        flex-direction: column;
-    }
     .ed-img{
         max-width: 300px;
         max-height: 149px;
@@ -642,10 +640,6 @@ footer h3{
 @media(max-width: 568px){
     .pimg1, .pimg2, .pimg3, .pimg4{
         background-attachment: scroll;
-    }
-    #edu-content{
-        display: flex;
-        flex-direction: column;
     }
     .ed-img{
         max-width: 300px;
@@ -717,6 +711,44 @@ footer h3{
     }*/
 
 }
+
+
+@media screen and (max-width: 780px) and (min-width: 560px){
+    .project-demo > p{
+        display: none;
+    }
+    .project-demo > h3{
+        /* text-align: center; */
+        margin: 0 auto;
+    }
+    #timeline{
+        display: flex;
+        flex-direction: column;
+        /* background-color: #031625; */
+        background-color: black;
+    }
+    .tl-item{
+        width: 100%;
+    }
+    .tl-item:hover{
+        width: 100% !important;
+    }
+    #timeline:hover .tl-item{
+        width: 100%;
+    }
+
+}
+
+/* Screen sizes 1023px and BELOW */
+@media(max-width: 1023){
+    /* #edu-content{
+        display: flex;
+        flex-direction: column;    
+    } */
+    
+}
+
+/* Screen sizes 1024px and ABOVE */
 @media(min-width: 1024){
     #edu-content{
         display: grid;
