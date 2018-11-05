@@ -256,8 +256,10 @@ p{
 
 .tech-icon{
     max-height: 109px;
-    filter: drop-shadow(-1px 0px 12px orange);
+    /* filter: drop-shadow(-1px 0px 12px orange); */
     /* width: 98px; */
+    background-color: #eee;
+    padding: 8px;
 
 }
 .tech-icon-box{
@@ -270,12 +272,12 @@ p{
     margin: 0 auto;
 }
 
-
-
-/* FOOTER */
 #tech-img:hover{
     background:#333;
 }
+
+
+/* FOOTER */
 footer{
     text-align: center;
     padding: 2rem 1rem;
@@ -292,24 +294,44 @@ footer h3{
     /* background: linear-gradient( orange, rgb(255, 123, 0)); */
     /* -webkit-background-clip: text; */
     /* -webkit-text-fill-color: transparent; */
-
 }
 
 .alert{
-    color: red;
+    /* color: red; */
+    /* color: #031625; */
+    background: linear-gradient( orange, rgb(255, 123, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
-.audio-btn{
+.audio{
     color: white;
     /* background-color:#333; */
     background: linear-gradient( orange, rgb(255, 123, 0));
-    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Arizonia', cursive;
     border-radius: 10px;
     padding: .5rem;
     border-width: 2px;  
     border-style: groove;
-    width: 5rem;
+    background: linear-gradient( orange, rgb(255, 123, 0));
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+    /* width: 5rem; */
 }
+
+#songstress{
+    background: linear-gradient( orange, rgb(255, 123, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #eee; 
+    /* color: orange; */
+    /* padding: 10px;  */
+    font-family: 'Arizonia', cursive;
+    font-size: 25px;
+}
+
 
 /* VIDEOS */
 .project-demo {
@@ -439,7 +461,7 @@ footer h3{
     max-height: 300px;
     margin: auto 0;
     vertical-align: middle;
-    filter: drop-shadow(20px 10px 8px #404075);
+    /* filter: drop-shadow(20px 10px 8px #404075); */
 }
 
 /* #edu-content{
@@ -558,11 +580,13 @@ footer h3{
     opacity: 0;
 
 }
+
 .tl-content h1{
     /* text-transform: uppercase; */
     /* color: #1779cf; */
     text-align: center;
     /* font-size: 1.44rem; */
+    font-size: 2.44rem;
     font-weight: normal;
 
 }
@@ -745,7 +769,22 @@ footer h3{
         display: flex;
         flex-direction: column;    
     } */
-    
+    #timeline{
+        display: flex;
+        flex-direction: column;
+        /* background-color: #031625; */
+        background-color: black;
+    }
+    .tl-item{
+        width: 100%;
+    }
+    .tl-item:hover{
+        width: 100% !important;
+    }
+    #timeline:hover .tl-item{
+        width: 100%;
+    }
+
 }
 
 /* Screen sizes 1024px and ABOVE */
