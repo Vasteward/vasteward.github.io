@@ -260,7 +260,7 @@ p{
     /* width: 98px; */
     background-color: #eee;
     padding: 8px;
-
+    margin: 2px;
 }
 .tech-icon-box{
     display: flex;
@@ -309,8 +309,7 @@ footer h3{
     color: white;
     /* background-color:#333; */
     background: linear-gradient( orange, rgb(255, 123, 0));
-    /* font-family: 'Josefin Sans', sans-serif; */
-    font-family: 'Arizonia', cursive;
+    font-family: 'Josefin Sans', sans-serif;
     border-radius: 10px;
     padding: .5rem;
     border-width: 2px;  
@@ -658,6 +657,9 @@ footer h3{
     }
     .video{
         display: none;
+    }
+    .audio{
+        width: 15rem;
     }
 }
 
