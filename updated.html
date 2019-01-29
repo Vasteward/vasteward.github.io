@@ -75,32 +75,32 @@ TODO: Create a a page loader that will have the ability to type an inspirational
             </div>
             <section class="caption">
                 <div id="videos" class="grid-container">
-                    <div id="p1" class="project-demo grid-item">
+                    <div id="p1" class="project-demo">
                         <!-- TODO: make videos responsive -->
                         <!--View work button will send visitor to this section-->
                         <h3><a id="proj" target="_blank" href="http://www.kneadedrelief.tk/" title="Go to the Kneaded Relief website">Kneaded Relief</a></h3>
                         <p>A revamped website designed mobile-first, with emphasis on UI and UX, the site exhibits the services offered, the benefits of massage therapy, and a direct email component</p>
                         <p style="color: whitesmoke; top: 0"><u style="font-family: 'Arizonia', cursive;">Technologies:</u> PHP, jQuery, CSS3, SEO </p>
-
                     </div>
-                    <div id="p1"class="project-demo  grid-item"">
+                    <div class="project-demo grid-item"">
                         <!-- TODO: make videos responsive -->
                         <!--View work button will send visitor to this section-->
                         <h3><a target="_blank" href="https://www.youtube.com/embed/mpCUrKvO6Qo" title="Go to the Cosmic Key Demo">Cosmic Key</a></h3>
                         <iframe class="video" src="https://www.youtube.com/embed/mpCUrKvO6Qo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                         </iframe>
                         <p>A commissioned website for an up and coming lifestyle micro-influencer. The site literally reads like a book, connects to MailChimp.</p>
+                        <p style="color: whitesmoke; top: 0"><u style="font-family: 'Arizonia', cursive;">Technologies:</u> MEAN(MongoDB, Express.js, Angular 2, Node.js), Turn.js, MailChimp, CSS3</p>
                     </div>
-                    <p style="color: whitesmoke; top: 0"><u style="font-family: 'Arizonia', cursive;">Technologies:</u> MEAN(MongoDB, Express.js, Angular 2, Node.js), Turn.js, MailChimp, CSS3</p>
-                    <div id="p2"class="project-demo  grid-item"">
+                    <div id="p2"class="project-demo grid-item"">
                         <h3><a target="_blank" href="https://www.youtube.com/embed/ciG0_ibi1lo" title="Go to the Endeavors Demo">Endeavors</a></h3>
                         <!--<iframe class="video"
                         src="https://www.youtube.com/embed/tgbNymZ7vqY">
                         </iframe>-->
                         <iframe class="video" src="https://www.youtube.com/embed/ciG0_ibi1lo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p>A task-manager shared amongst companions that keeps track/exhibits everyone's duties in a major endeavor which also helps each user stay motivated to create targeted and effective goals so the team may accomplish a prime endeavor</p>
+                        <p style="color: whitesmoke; top: 0"><u style="font-family: 'Arizonia', cursive;">Technologies:</u> Python/Django, CSS3, MySQL</p>
+
                     </div>
-                    <p style="color: whitesmoke; top: 0"><u style="font-family: 'Arizonia', cursive;">Technologies:</u> Python/Django, CSS3, MySQL</p>
                 </div>
             </section>
             
@@ -320,6 +320,13 @@ TODO: Create a a page loader that will have the ability to type an inspirational
     crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
+            console.log("DEETS " + window.width);
+            console.log($(window).width());
+            console.log($(document).width());
+
+            
+
+            
             $("#unlv").click(function(){
                 $("#cui-box").fadeToggle("slow");
                 $("#cd-box").fadeToggle("slow");

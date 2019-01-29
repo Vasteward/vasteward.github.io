@@ -160,7 +160,6 @@ section{
     border-right: dotted 1px #fff;
     display: inline-block;
     padding: 0 1rem;
-    
 }
 
 .caption{
@@ -170,6 +169,9 @@ section{
     /* height: 100vh; */
 }
 
+#videos{
+    display: grid;
+}
 
 #content{
     width: 100vw;
@@ -197,7 +199,7 @@ p{
     background-attachment: fixed;
 }
 
-/* big imgage */
+/* big image */
 .pimg3{
     background-image: url(../images/photos/vincenzo-di-giorgi-51527-unsplash.jpg);
     /* min-height: 100%; */
@@ -515,7 +517,6 @@ footer h3{
     color: white;
     overflow: hidden; /*modified this attribute from hidden to scroll; reverterd back so we could modify the after effect instead of the entire element itself; then changed it back as my hypothesis did not rule out*/
     transition: width 0.5s ease;
-
 }
 .tl-item:before, .tl-item:after{
     transform: translate3d(0,0,0);
