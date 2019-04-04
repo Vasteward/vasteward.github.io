@@ -1,0 +1,3 @@
+[submodule "SagaciousDictations"]
+	path = SagaciousDictations
+	url = https://github.com/Vasteward/SagaciousDictations.git

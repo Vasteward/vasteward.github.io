@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timeline</title>
+    <style>
+        .tl-bg{
+            background-image: url(../assets/images/experiences/classroom.jpg);
+        }
+        .tl-bg-2{
+            background-image: url(../assets/images/experiences/china.jpg);
+        }
+        .tl-bg-3{
+            background-image: url(../assets/images/experiences/hk-dawn.jpg);
+        }
+        .tl-bg-4{
+            background-image: url(../assets/images/experiences/together.jpg);
+        }
+
+        body{
+            font-family: tahoma;
+            font-size: 15px;
+            line-height: 1.75;
+            padding: 0;
+            margin: 0;
+            color: #eee;;
+        }
+
+        #timeline:hover .tl-item{
+            width: 23.3333%;
+        }
+
+        #timeline{
+            display: flex;
+            background-color: #031625;
+        }
+        .tl-item{
+            transform: translate3d(0,0,0);
+            position: relative;
+            width: 25%;
+            height: 100vh;
+            min-height: 600px;
+            color: white;
+            overflow: scroll; /*modified this attribute from hidden to scroll; reverterd back so we could modify the after effect instead of the entire element itself; then changed it back as my hypothesis did not rule out*/
+            transition: width 0.5s ease;
+        
+        }
+        .tl-item:before, .tl-item:after{
+            transform: translate3d(0,0,0);
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+        .tl-item:after{
+            background: rgba(3,22,37,0.85);
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+        .tl-item:before{
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 75%);
+            z-index: 1;
+            opacity: 0;
+            transform: translate3d(0,0,0,) translateY(50%);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .tl-item:hover{
+            width: 30% !important;
+        }
+        .tl-item:hover:after{
+            opacity: 0;
+            overflow: scroll;
+        }
+        .tl-item:hover:before{
+            opacity: 1;
+            transform: translate3d(0,0,0) translateY(0);
+            transition: opacity 1s ease, transform 1s ease 0.25s;
+            /*overflow: hidden;*/
+        }
+
+        .tl-item:hover .tl-content{
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.75s ease 0.5s;
+        }
+
+        .tl-item:hover, .tl-bg, .tl-bg-2, .tl-bg-3, .tl-bg-4{
+            filter: grayscale(0);
+        }
+
+        .tl-content{
+            transform: translate3d(0,0,0) translateY(25px);
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            margin: 0.1618em;
+            top: 55%;
+            opacity: 0;
+
+        }
+        .tl-content h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+            color: #1779cf;
+            font-size: 1.44rem;
+            font-weight: normal;
+
+        }
+
+        .tl-year{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 1;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+        
+        .tl-year p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.628rem;
+            line-height: 0;
+        }
+
+        .tl-bg, .tl-bg-2, .tl-bg-3, .tl-bg-4{
+            transform: translate3d(0,0,0);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-position: center center;
+            transition: filter 0.5s ease;
+            filter: grayscale(60%);
+        }
+        @media(max-width: 768px){
+            #timeline{
+                display: flex;
+                flex-direction: column;
+                background-color: #031625;
+            }
+            .tl-item{
+                width: 100%;
+            }
+            .tl-item:hover{
+                width: 100% !important;
+            }
+            #timeline:hover .tl-item{
+                width: 100%;
+            }
+            /*.tl-item:hover:after{
+                overflow: scroll;
+            }*/
+        }
+    </style>
+</head>
+<body>
+    <section id="timeline">
+        <div class="tl-item">
+            <div class="tl-bg">
+
+            </div>
+            <div class="tl-year">
+                <p class="f2 heading">2012-2014</p>
+            </div>
+
+            <div class="tl-content">
+                <h1>Long-Term Substitute Teacher</h1>
+                <p>Taught 500+ students from inner-city school systems to suburban schools systems(K-12); Math, Science, Physical Education, Literature, and Art. Developed an atmosphere where students felt secure, valued, and encouraged to achieve academic and personal goals. Created various lesson plans that not only relayed the material but connected the lessons to real-life situations so students could understand how the material affected their lives and how they could use the lessons for the future. Coordinated activities that exceeded various learning outcomes. Effectively turned around "untouchable" classes through discipline, support, and care. Aided principals and administrative staff to man and create events for cultural enrichment. Supported students in their personal lives, by showing up to sporting events and performances. 
+                    </p>
+            </div>
+        </div>
+
+
+        <div class="tl-item">
+            <div class="tl-bg-2">
+
+            </div>
+            <div class="tl-year">
+                <p class="f2 heading">2014-2015</p>
+            </div>
+
+            <div class="tl-content">
+                <h1>Hospitality Professor</h1>
+                <p>Created lesson plans, leadership groups, and curriculum. Taught students about various philosophical elements that could be examined in various cultures. Prepared comprehensive written and graphic materials to deliver presentations and communicate effectively.</p>
+            </div>
+        </div>
+
+        <div class="tl-item">
+            <div class="tl-bg-3">
+
+            </div>
+            <div class="tl-year">
+                <p class="f2 heading">2015-2016</p>
+            </div>
+
+            <div class="tl-content">
+                <h1>Program Coordinator</h1>
+                <p>Planned, organized, and executed daily-lessons based on student interest and large-scale and well-attended educational events. Coordinated and executed print marketing campaigns, presentations, events, and taught classes to promote awareness of resources and services. Conducted facility tours and activities for potential classes of students, curious foreign educators, and interested business representatives.</p>
+            </div>
+        </div>
+
+
+        <div class="tl-item">
+            <div class="tl-bg-4">
+
+            </div>
+            <div class="tl-year">
+                <p class="f2 heading">2016-2017</p>
+            </div>
+
+            <div class="tl-content">
+                <h1>Business Liaison & Outreach/Admin Coordinator</h1>
+                <p>Operating under the Denver Human Services(DHS), I collaborated with community partners/employers to identify & create engagement opportunities to advance our clients. Met and exceeded recruitment metrics of enrolling 90 clients a quarter. Reinforced relationships with organizations and businesses through giving daily presentations in addition to hosting weekly events and meetings. Ensured the face of the organization was amiable and helpful. Developed flowcharts, spreadsheets, marketing collateral, social media platforms, recruitment/ expense reports, and curriculum. </p>
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>
